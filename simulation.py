@@ -8,13 +8,14 @@ from random import randrange
 # Import experimental data
 
 # Set factors from imported experimental data
-target_count = 1000000 # Between 1000000 and 10000000
-max_numbers = 5
-random_range = 100
+target_count = 50000000 # Either 10000000 or 50000000
+max_numbers = 5        # Either 2 or 5
+random_range = 100     # Either 100 or 1000
 
 master_debug_flag = 0 # Turns on all debug flags - this is the factor I switch on or off
-debug_flag = 0        # Happens during the experiment and does impact experiment time
-final_debug_flag = 1  # Occurs at the end and doesn't impact experiment time
+
+debug_flag = 0        # Happens during the experiment and does impact experiment time - for code debug use only
+final_debug_flag = 1  # Occurs at the end and doesn't impact experiment time          - for code debug use only and to read time output
 
 # Run experiment
 current_count = 0
